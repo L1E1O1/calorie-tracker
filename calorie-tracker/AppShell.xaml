@@ -3,13 +3,13 @@
     x:Class="calorie_tracker.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:calorie_tracker"
+    xmlns:local="clr-namespace:calorie_tracker.views"
     Shell.FlyoutBehavior="Flyout"
     Title="calorie_tracker">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <TabBar>
+        <ShellContent Title="Start"  ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Title="UserProfile"  ContentTemplate="{DataTemplate local:UserProfile}" />
+        <ShellContent Title="AddMeal"  ContentTemplate="{DataTemplate local:AddMeal}" />
+    </TabBar>
 </Shell>
