@@ -2,7 +2,10 @@
   "profiles": {
     "Windows Machine": {
       "commandName": "Project",
-      "nativeDebugging": false
+      "workingDirectory": "C:\\Users\\sajad.bayram\\Desktop\\calorie-tracker\\calorie-tracker\\calorie-tracker",
+      "nativeDebugging": true,
+      "jsWebView2Debugging": false,
+      "sqlDebugging": false
     }
   }
 }

@@ -1,0 +1,17 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calorie_tracker.views.MainPage"
+             Title="Daily Summary">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label x:Name="summaryLabel" FontSize="18" />
+
+        <ListView x:Name="mealListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Calories}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>
