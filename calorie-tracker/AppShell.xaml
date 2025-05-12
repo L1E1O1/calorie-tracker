@@ -9,7 +9,7 @@
 
     <TabBar>
         <ShellContent Title="Start"  ContentTemplate="{DataTemplate local:MainPage}" />
-        <ShellContent Title="UserProfile"  ContentTemplate="{DataTemplate local:UserProfile}" />
-        <ShellContent Title="AddMeal"  ContentTemplate="{DataTemplate local:AddMeal}" />
+        <ShellContent Title="UserProfile"  ContentTemplate="{DataTemplate local:UserProfilePage}" />
+        <ShellContent Title="AddMeal"  ContentTemplate="{DataTemplate local:AddMealPage}" />
     </TabBar>
 </Shell>

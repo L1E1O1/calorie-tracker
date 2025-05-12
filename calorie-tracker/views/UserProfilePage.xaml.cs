@@ -4,7 +4,7 @@ namespace calorie_tracker.views;
 
 public partial class UserProfilePage : ContentPage
 {
-    public static UserProfile CurrentUser { get; private set; }
+    public static UserProfile? CurrentUser { get; private set; }
 
     public UserProfilePage()
     {
