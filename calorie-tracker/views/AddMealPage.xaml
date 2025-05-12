@@ -1,44 +1,46 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="calorie_tracker.views.AddMealPage"
-             Title="Add Meal">
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+            xmlns:sys="clr-namespace:System;assembly=System.Runtime"  
+            x:Class="calorie_tracker.views.AddMealPage"  
+            Title="Add Meal">  
 
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="10">
+   <ScrollView>  
+       <VerticalStackLayout Padding="20" Spacing="10">  
 
-            <Label Text="Meal Name" />
-            <Entry x:Name="nameEntry" Placeholder="e.g. Chicken Salad" />
+           <Label Text="Meal Name" />  
+           <Entry x:Name="nameEntry" Placeholder="e.g. Chicken Salad" />  
 
-            <Label Text="Calories" />
-            <Entry x:Name="calEntry" Keyboard="Numeric" />
+           <Label Text="Calories" />  
+           <Entry x:Name="calEntry" Keyboard="Numeric" />  
 
-            <Label Text="Protein (g)" />
-            <Entry x:Name="proteinEntry" Keyboard="Numeric" />
+           <Label Text="Protein (g)" />  
+           <Entry x:Name="proteinEntry" Keyboard="Numeric" />  
 
-            <Label Text="Carbs (g)" />
-            <Entry x:Name="carbsEntry" Keyboard="Numeric" />
+           <Label Text="Carbs (g)" />  
+           <Entry x:Name="carbsEntry" Keyboard="Numeric" />  
 
-            <Label Text="Fats (g)" />
-            <Entry x:Name="fatsEntry" Keyboard="Numeric" />
+           <Label Text="Fats (g)" />  
+           <Entry x:Name="fatsEntry" Keyboard="Numeric" />  
 
-            <Label Text="Meal Type" />
-            <Picker x:Name="mealTypePicker">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Breakfast</x:String>
-                        <x:String>Lunch</x:String>
-                        <x:String>Dinner</x:String>
-                        <x:String>Snack</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
+           <Label Text="Meal Type" />  
+           <Picker x:Name="mealTypePicker">  
+               <Picker.ItemsSource>  
+                   <x:Array Type="{x:Type x:String}">  
+                       <x:String>Breakfast</x:String>  
+                       <x:String>Lunch</x:String>  
+                       <x:String>Dinner</x:String>  
+                       <x:String>Snack</x:String>  
+                   </x:Array>  
+               </Picker.ItemsSource>  
+           </Picker>
 
-            <DatePicker x:Name="datePicker" Date="{x:Static sys:DateTime.Now}" />
-            <TimePicker x:Name="timePicker" Time="{x:Static sys:DateTime.Now.TimeOfDay}" />
+            <DatePicker x:Name="datePicker" />
+            <TimePicker x:Name="timePicker" />
 
-            <Button Text="Add Meal" Clicked="OnAddMealClicked" />
-            <Button Text="View Summary" Clicked="OnViewSummaryClicked" />
 
-        </VerticalStackLayout>
-    </ScrollView>
+            <Button Text="Add Meal" Clicked="OnAddMealClicked" />  
+           <Button Text="View Summary" Clicked="OnViewSummaryClicked" />  
+
+       </VerticalStackLayout>  
+   </ScrollView>  
 </ContentPage>
